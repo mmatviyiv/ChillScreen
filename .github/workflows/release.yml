@@ -21,7 +21,7 @@ jobs:
         echo ::set-output name=ARTIFACT::"${NAME}.zip"
     - name: Build plugin
       run: |
-        xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${{ steps.vars.outputs.VERSION }}\"'
+        xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${{ steps.vars.outputs.VERSION }}\"' -target "GH Actions"
         cd ${{ steps.vars.outputs.BUILD_PATH }}
         zip -vr ${{ steps.vars.outputs.ARTIFACT }} .
     - name: Upload plugin

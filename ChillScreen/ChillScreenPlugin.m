@@ -35,7 +35,9 @@
 }
 
 - (void)swizzleConnectionError:(id)error didChangeForAccount:(id)account {
-    Log(@"little shit %@ %@", error, account);
+    #ifdef DEBUG
+        Log(@"%@ %@", error, account);
+    #endif
     
     if(error) {
         Log(@"skipping error %@", error);

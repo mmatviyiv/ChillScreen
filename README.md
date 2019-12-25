@@ -1,12 +1,12 @@
 # ChillScreen
 
-Plugin for macOS that prevents random and annoying Mail popups. Make it chill.
+Plugin for macOS that prevents random and annoying popup of Mail's window. Make it chill.
 
 ## Requirements
 
 **macOS Catalina**. Other versins are coming soon.
 
-## Installing
+## Install
 
 1. Run in **Terminal**
 ```bash
@@ -19,12 +19,21 @@ curl -SL https://github.com/mmatviyiv/ChillScreen/releases/latest/download/Chill
 6. Click **Apply and Restart Mail**
 7. Done
 
+## Uninstall
+
+Run in **Terminal**
+```bash
+rm -rf ~/Library/Mail/Bundles/ChillScreen.mailbundle
+```
+
 ## Build locally
 
 ```bash
-xcodebuild -target Local PRODUCT_NAME=ChillScreen
+xcodebuild -configuration Debug
 ```
+
+Then activate it in **Mail** app following the instruction from [Install](#Install).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
