@@ -20,7 +20,7 @@
 		4D63E6F223B3078800D0765F /* Local Deploy */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
-			dstPath = /Library/Mail/Bundles;
+			dstPath = "~/Library/Mail/Bundles";
 			dstSubfolderSpec = 0;
 			files = (
 				4D63E6F323B3078800D0765F /* ChillScreen.mailbundle in Local Deploy */,

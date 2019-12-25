@@ -17,17 +17,18 @@ jobs:
         NAME="ChillScreen.mailbundle"
 
         echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-        echo ::set-output name=BUILD_PATH::"./build/Release/${NAME}"
+        echo ::set-output name=BUILD_PATH::"{GITHUB_WORKSPACE}/build/Release/"
         echo ::set-output name=ARTIFACT::"${NAME}.zip"
     - name: Build plugin
       run: |
         xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${{ steps.vars.outputs.VERSION }}\"'
-        zip -vr ${{ steps.vars.outputs.ARTIFACT }} ${{ steps.vars.outputs.BUILD_PATH }}
+        cd ${{ steps.vars.outputs.BUILD_PATH }}
+        zip -vr ${{ steps.vars.outputs.ARTIFACT }} .
     - name: Upload plugin
       uses: svenstaro/upload-release-action@v1-release
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: ./${{ steps.vars.outputs.ARTIFACT }}
+        file: ${{ steps.vars.outputs.BUILD_PATH }}/${{ steps.vars.outputs.ARTIFACT }}
         asset_name: ${{ steps.vars.outputs.ARTIFACT }}
         tag: ${{ github.ref }}
         overwrite: true
