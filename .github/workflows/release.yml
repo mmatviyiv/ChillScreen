@@ -14,11 +14,18 @@ jobs:
     - name: Get version
       id: get_version
       run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-    - name: Build
-      run: xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${VERSION}\"'
+    - name: Build plugin
+      run: |
+        xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${VERSION}\"'
+        zip -vr ChillScreen.mailbundle.zip ./build/Release/ChillScreen.mailbundle
       env:
         VERSION: ${{ steps.get_version.outputs.VERSION }}
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VERSION: ${{ steps.get_version.outputs.VERSION }}
       with:
-        name: ${VERSION}
-        path: build/Release/ChillScreen.mailbundle
+        upload_url: https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${VERSION}/assets
+        asset_path: ./build/Release/ChillScreen.mailbundle.zip
+        asset_name: ChillScreen.mailbundle.zip
+        asset_content_type: application/zip
