@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DD0F167239C7CF0003958AC /* ChillScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F166239C7CF0003958AC /* ChillScreenPlugin.m */; };
+		4DD0F169239C7F9D003958AC /* ChillScreen.mailbundle in Local Deploy */ = {isa = PBXBuildFile; fileRef = 4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */; };
+		4DD0F174239E9D6C003958AC /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F173239E9D6C003958AC /* Log.m */; };
+		4DD0F177239E9E23003958AC /* JRLPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F176239E9E23003958AC /* JRLPSwizzle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DD0F168239C7F49003958AC /* Local Deploy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Library/Mail/Bundles;
+			dstSubfolderSpec = 0;
+			files = (
+				4DD0F169239C7F9D003958AC /* ChillScreen.mailbundle in Local Deploy */,
+			);
+			name = "Local Deploy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillScreen.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD0F15E239C79F3003958AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD0F165239C7CF0003958AC /* ChillScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChillScreenPlugin.h; sourceTree = "<group>"; };
+		4DD0F166239C7CF0003958AC /* ChillScreenPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChillScreenPlugin.m; sourceTree = "<group>"; };
+		4DD0F172239E9D6C003958AC /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		4DD0F173239E9D6C003958AC /* Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		4DD0F175239E9E23003958AC /* JRLPSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRLPSwizzle.h; sourceTree = "<group>"; };
+		4DD0F176239E9E23003958AC /* JRLPSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRLPSwizzle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DD0F158239C79F3003958AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DD0F152239C79F3003958AC = {
+			isa = PBXGroup;
+			children = (
+				4DD0F15D239C79F3003958AC /* ChillScreen */,
+				4DD0F15C239C79F3003958AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DD0F15C239C79F3003958AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DD0F15D239C79F3003958AC /* ChillScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4DD0F172239E9D6C003958AC /* Log.h */,
+				4DD0F173239E9D6C003958AC /* Log.m */,
+				4DD0F15E239C79F3003958AC /* Info.plist */,
+				4DD0F165239C7CF0003958AC /* ChillScreenPlugin.h */,
+				4DD0F166239C7CF0003958AC /* ChillScreenPlugin.m */,
+				4DD0F175239E9E23003958AC /* JRLPSwizzle.h */,
+				4DD0F176239E9E23003958AC /* JRLPSwizzle.m */,
+			);
+			path = ChillScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DD0F15A239C79F3003958AC /* ChillScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DD0F161239C79F3003958AC /* Build configuration list for PBXNativeTarget "ChillScreen" */;
+			buildPhases = (
+				4DD0F157239C79F3003958AC /* Sources */,
+				4DD0F158239C79F3003958AC /* Frameworks */,
+				4DD0F159239C79F3003958AC /* Resources */,
+				4DD0F168239C7F49003958AC /* Local Deploy */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChillScreen;
+			productName = ChillScreen;
+			productReference = 4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DD0F153239C79F3003958AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Mark Matviyiv";
+				TargetAttributes = {
+					4DD0F15A239C79F3003958AC = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DD0F156239C79F3003958AC /* Build configuration list for PBXProject "ChillScreen" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DD0F152239C79F3003958AC;
+			productRefGroup = 4DD0F15C239C79F3003958AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DD0F15A239C79F3003958AC /* ChillScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DD0F159239C79F3003958AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DD0F157239C79F3003958AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD0F177239E9E23003958AC /* JRLPSwizzle.m in Sources */,
+				4DD0F174239E9D6C003958AC /* Log.m in Sources */,
+				4DD0F167239C7CF0003958AC /* ChillScreenPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4DD0F15F239C79F3003958AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CHILLSCREEN_VERSION=\\@\\\"local_build\\\"",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_PREPROCESS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4DD0F160239C79F3003958AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "CHILLSCREEN_VERSION=\\@\\\"local_build\\\"";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4DD0F162239C79F3003958AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				INFOPLIST_FILE = ChillScreen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Mail/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Debug;
+		};
+		4DD0F163239C79F3003958AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				INFOPLIST_FILE = ChillScreen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Mail/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DD0F156239C79F3003958AC /* Build configuration list for PBXProject "ChillScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD0F15F239C79F3003958AC /* Debug */,
+				4DD0F160239C79F3003958AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DD0F161239C79F3003958AC /* Build configuration list for PBXNativeTarget "ChillScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD0F162239C79F3003958AC /* Debug */,
+				4DD0F163239C79F3003958AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DD0F153239C79F3003958AC /* Project object */;
+}
