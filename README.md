@@ -10,7 +10,9 @@ Plugin for macOS that prevents random and annoying popup of Mail's window. Make 
 
 1. Run in **Terminal**
 ```bash
-curl -SL https://github.com/mmatviyiv/ChillScreen/releases/latest/download/ChillScreen.mailbundle.zip | tar -xf - -C ~/Library/Mail/Bundles
+curl -SL \
+    https://github.com/mmatviyiv/ChillScreen/releases/latest/download/ChillScreen.mailbundle.zip | \
+    tar -xf - -C ~/Library/Mail/Bundles
 ```
 2. Open **Mail** app
 3. Click **Mail** in the menu bar, select **Preferences…**
