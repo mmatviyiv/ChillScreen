@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DD0F167239C7CF0003958AC /* ChillScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F166239C7CF0003958AC /* ChillScreenPlugin.m */; };
-		4DD0F169239C7F9D003958AC /* ChillScreen.mailbundle in Local Deploy */ = {isa = PBXBuildFile; fileRef = 4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */; };
-		4DD0F174239E9D6C003958AC /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F173239E9D6C003958AC /* Log.m */; };
-		4DD0F177239E9E23003958AC /* JRLPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F176239E9E23003958AC /* JRLPSwizzle.m */; };
+		4D63E6EA23B306E200D0765F /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F173239E9D6C003958AC /* Log.m */; };
+		4D63E6EB23B306E200D0765F /* ChillScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F166239C7CF0003958AC /* ChillScreenPlugin.m */; };
+		4D63E6EC23B306E200D0765F /* JRLPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F176239E9E23003958AC /* JRLPSwizzle.m */; };
+		4D63E6EF23B3078800D0765F /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F173239E9D6C003958AC /* Log.m */; };
+		4D63E6F023B3078800D0765F /* ChillScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F166239C7CF0003958AC /* ChillScreenPlugin.m */; };
+		4D63E6F123B3078800D0765F /* JRLPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0F176239E9E23003958AC /* JRLPSwizzle.m */; };
+		4D63E6F323B3078800D0765F /* ChillScreen.mailbundle in Local Deploy */ = {isa = PBXBuildFile; fileRef = 4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4DD0F168239C7F49003958AC /* Local Deploy */ = {
+		4D63E6F223B3078800D0765F /* Local Deploy */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = /Library/Mail/Bundles;
 			dstSubfolderSpec = 0;
 			files = (
-				4DD0F169239C7F9D003958AC /* ChillScreen.mailbundle in Local Deploy */,
+				4D63E6F323B3078800D0765F /* ChillScreen.mailbundle in Local Deploy */,
 			);
 			name = "Local Deploy";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D63E6F723B3078800D0765F /* Local.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Local.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D63E6F823B3078800D0765F /* ChillScreen copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ChillScreen copy-Info.plist"; path = "/Users/mark/workspace/pet/chillscreen/ChillScreen copy-Info.plist"; sourceTree = "<absolute>"; };
 		4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillScreen.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD0F15E239C79F3003958AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD0F165239C7CF0003958AC /* ChillScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChillScreenPlugin.h; sourceTree = "<group>"; };
@@ -38,22 +43,13 @@
 		4DD0F176239E9E23003958AC /* JRLPSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRLPSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		4DD0F158239C79F3003958AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		4DD0F152239C79F3003958AC = {
 			isa = PBXGroup;
 			children = (
 				4DD0F15D239C79F3003958AC /* ChillScreen */,
 				4DD0F15C239C79F3003958AC /* Products */,
+				4D63E6F823B3078800D0765F /* ChillScreen copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD0F15B239C79F3003958AC /* ChillScreen.mailbundle */,
+				4D63E6F723B3078800D0765F /* Local.mailbundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,14 +79,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D63E6ED23B3078800D0765F /* Local */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D63E6F423B3078800D0765F /* Build configuration list for PBXNativeTarget "Local" */;
+			buildPhases = (
+				4D63E6EE23B3078800D0765F /* Sources */,
+				4D63E6F223B3078800D0765F /* Local Deploy */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Local;
+			productName = ChillScreen;
+			productReference = 4D63E6F723B3078800D0765F /* Local.mailbundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		4DD0F15A239C79F3003958AC /* ChillScreen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DD0F161239C79F3003958AC /* Build configuration list for PBXNativeTarget "ChillScreen" */;
 			buildPhases = (
-				4DD0F157239C79F3003958AC /* Sources */,
-				4DD0F158239C79F3003958AC /* Frameworks */,
-				4DD0F159239C79F3003958AC /* Resources */,
-				4DD0F168239C7F49003958AC /* Local Deploy */,
+				4D63E6E923B306C500D0765F /* Sources */,
 			);
 			buildRules = (
 			);
@@ -128,34 +138,69 @@
 			projectRoot = "";
 			targets = (
 				4DD0F15A239C79F3003958AC /* ChillScreen */,
+				4D63E6ED23B3078800D0765F /* Local */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		4DD0F159239C79F3003958AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		4DD0F157239C79F3003958AC /* Sources */ = {
+		4D63E6E923B306C500D0765F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DD0F177239E9E23003958AC /* JRLPSwizzle.m in Sources */,
-				4DD0F174239E9D6C003958AC /* Log.m in Sources */,
-				4DD0F167239C7CF0003958AC /* ChillScreenPlugin.m in Sources */,
+				4D63E6EA23B306E200D0765F /* Log.m in Sources */,
+				4D63E6EB23B306E200D0765F /* ChillScreenPlugin.m in Sources */,
+				4D63E6EC23B306E200D0765F /* JRLPSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D63E6EE23B3078800D0765F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D63E6EF23B3078800D0765F /* Log.m in Sources */,
+				4D63E6F023B3078800D0765F /* ChillScreenPlugin.m in Sources */,
+				4D63E6F123B3078800D0765F /* JRLPSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4D63E6F523B3078800D0765F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				INFOPLIST_FILE = "ChillScreen copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Mail/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Debug;
+		};
+		4D63E6F623B3078800D0765F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				INFOPLIST_FILE = "ChillScreen copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Mail/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Release;
+		};
 		4DD0F15F239C79F3003958AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -307,6 +352,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D63E6F423B3078800D0765F /* Build configuration list for PBXNativeTarget "Local" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D63E6F523B3078800D0765F /* Debug */,
+				4D63E6F623B3078800D0765F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4DD0F156239C79F3003958AC /* Build configuration list for PBXProject "ChillScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

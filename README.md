@@ -13,7 +13,7 @@ TBD
 ## Build locally
 
 ```bash
-xcodebuild build
+xcodebuild -target Local PRODUCT_NAME=ChillScreen
 ```
 
 ## License
