@@ -14,21 +14,20 @@ jobs:
     - name: Set variables
       id: vars
       run: |
-        VERSION=${GITHUB_REF/refs\/tags\//}
-        URL="https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${VERSION}/assets{?name,label}"
-        echo ::set-output name=VERSION::${VERSION}
-        echo ::set-output name=URL::${URL}
+        NAME="ChillScreen.mailbundle"
+
+        echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+        echo ::set-output name=BUILD_PATH::"./build/Release/${NAME}"
+        echo ::set-output name=ARTIFACT::"${NAME}.zip"
     - name: Build plugin
       run: |
-        xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${VERSION}\"'
-        zip -vr ChillScreen.mailbundle.zip ./build/Release/ChillScreen.mailbundle
-      env:
-        VERSION: ${{ steps.vars.outputs.VERSION }}
-    - uses: actions/upload-release-asset@v1.0.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${{ steps.vars.outputs.VERSION }}\"'
+        zip -vr ${{ steps.vars.outputs.ARTIFACT }} ${{ steps.vars.outputs.BUILD_PATH }}
+    - name: Upload plugin
+      uses: svenstaro/upload-release-action@v1-release
       with:
-        upload_url: ${{ steps.vars.outputs.URL }}
-        asset_path: ./ChillScreen.mailbundle.zip
-        asset_name: ChillScreen.mailbundle.zip
-        asset_content_type: application/zip
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./${{ steps.vars.outputs.ARTIFACT }}
+        asset_name: ${{ steps.vars.outputs.ARTIFACT }}
+        tag: ${{ github.ref }}
+        overwrite: true
