@@ -15,7 +15,10 @@ jobs:
       id: get_version
       run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
     - name: Build
-      run: |
-        xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${VERSION}\"'
+      run: xcodebuild GCC_PREPROCESSOR_DEFINITIONS='$(inherited) CHILLSCREEN_VERSION=\@\"${VERSION}\"'
       env:
         VERSION: ${{ steps.get_version.outputs.VERSION }}
+    - uses: actions/upload-artifact@v1
+      with:
+        name: ${VERSION}
+        path: build/Release/ChillScreen.mailbundle
