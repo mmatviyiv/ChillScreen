@@ -10,7 +10,7 @@
     [self patch];
 }
 
-- (id)CS_initWithContentRect:(struct CGRect)rect styleMask:(unsigned long long)mask backing:(unsigned long long)back defer:(BOOL)defer {
+- (id)CS_initWithContentRect:(NSRect)rect styleMask:(NSWindowStyleMask)mask backing:(NSBackingStoreType)back defer:(BOOL)defer {
     
     id window = [self CS_initWithContentRect:rect styleMask:mask backing:back defer:defer];
     

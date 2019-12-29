@@ -10,7 +10,7 @@
     [self patch];
 }
 
-- (void)CS__connectionError:(id)error didChangeForAccount:(id)account {
+- (void)CS__connectionError:(NSError *)error didChangeForAccount:(id)account {
     #ifdef DEBUG
         Log(@"%@ %@", error, account);
     #endif
