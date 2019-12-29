@@ -11,7 +11,6 @@
 }
 
 - (id)CS_initWithContentRect:(NSRect)rect styleMask:(NSWindowStyleMask)mask backing:(NSBackingStoreType)back defer:(BOOL)defer {
-    
     id window = [self CS_initWithContentRect:rect styleMask:mask backing:back defer:defer];
     
     NSButton *closeButton = [self standardWindowButton:NSWindowCloseButton];

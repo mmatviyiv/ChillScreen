@@ -2,8 +2,6 @@
 //    Copyright © 2019 Mark Matviiv. MIT License.
 
 #import <objc/runtime.h>
-#import <Cocoa/Cocoa.h>
-#import <Foundation/Foundation.h>
 #import "JRLPSwizzle.h"
 #import "Log.h"
 
