@@ -6,19 +6,6 @@
 
 @implementation ChillScreenPlugin
 
-+ (void)load {
-    Class accountManagerClass = NSClassFromString(@"AccountManager");
-    Class chillScreenPluginClass = NSClassFromString(@"ChillScreenPlugin");
-    
-    SEL originalSel = NSSelectorFromString(@"_connectionError:didChangeForAccount:");
-    SEL swizzledSel = NSSelectorFromString(@"swizzleConnectionError:didChangeForAccount:");
-    
-    [accountManagerClass jrlp_addMethod:swizzledSel fromClass:chillScreenPluginClass error:nil];
-    [accountManagerClass jrlp_swizzleMethod:originalSel withMethod:swizzledSel error:nil];
-    
-    Log(@"swizzled methods");
-}
-
 + (void)initialize {
     Log(@"loading started");
     
@@ -32,20 +19,6 @@
     [[self class] registerBundle];
     
     Log(@"plugin registered");
-}
-
-- (void)swizzleConnectionError:(id)error didChangeForAccount:(id)account {
-    #ifdef DEBUG
-        Log(@"%@ %@", error, account);
-    #endif
-    
-    if(error) {
-        Log(@"skipping error %@", error);
-        
-        return;
-    }
-    
-    [self swizzleConnectionError:error didChangeForAccount:account];
 }
 
 @end

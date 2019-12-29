@@ -13,7 +13,7 @@
     NSString *message = [[NSString alloc] initWithFormat:format arguments:arguments];
     va_end(arguments);
 
-    NSLog(@"[ChillScreenPlugin] [%@]: %@", CHILLSCREEN_VERSION, message);
+    NSLog(@"[ChillScreen] [%@]: %@", CHILLSCREEN_VERSION, message);
 }
 
 @end

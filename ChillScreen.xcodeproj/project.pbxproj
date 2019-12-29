@@ -10,6 +10,12 @@
 		4D63E72F23B3E62900D0765F /* JRLPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63E72A23B3E62900D0765F /* JRLPSwizzle.m */; };
 		4D63E73023B3E62900D0765F /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63E72D23B3E62900D0765F /* Log.m */; };
 		4D63E73123B3E62900D0765F /* ChillScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63E72E23B3E62900D0765F /* ChillScreenPlugin.m */; };
+		4DE73CD823B738FE00E3CF62 /* CS_AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE73CD723B738FE00E3CF62 /* CS_AccountManager.m */; };
+		4DE73CD923B738FE00E3CF62 /* CS_AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE73CD723B738FE00E3CF62 /* CS_AccountManager.m */; };
+		4DE73CDE23B7929F00E3CF62 /* Patcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE73CDD23B7929F00E3CF62 /* Patcher.m */; };
+		4DE73CDF23B7929F00E3CF62 /* Patcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE73CDD23B7929F00E3CF62 /* Patcher.m */; };
+		4DE73CEF23B831A100E3CF62 /* CS_MouseTrackingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE73CEE23B831A100E3CF62 /* CS_MouseTrackingWindow.m */; };
+		4DE73CF023B831A100E3CF62 /* CS_MouseTrackingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE73CEE23B831A100E3CF62 /* CS_MouseTrackingWindow.m */; };
 		4DF9E57323B3EDAE00BC888A /* ChillScreen.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D63E72023B3E31200D0765F /* ChillScreen.mailbundle */; };
 		4DF9E57C23B3EFBA00BC888A /* ChillScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63E72E23B3E62900D0765F /* ChillScreenPlugin.m */; };
 		4DF9E57D23B3EFBA00BC888A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63E72D23B3E62900D0765F /* Log.m */; };
@@ -38,7 +44,13 @@
 		4D63E72C23B3E62900D0765F /* ChillScreenPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChillScreenPlugin.h; sourceTree = "<group>"; };
 		4D63E72D23B3E62900D0765F /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		4D63E72E23B3E62900D0765F /* ChillScreenPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChillScreenPlugin.m; sourceTree = "<group>"; };
-		4DF9E58423B3EFBA00BC888A /* ChillScreen.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillScreen.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE73CD623B738FE00E3CF62 /* CS_AccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CS_AccountManager.h; sourceTree = "<group>"; };
+		4DE73CD723B738FE00E3CF62 /* CS_AccountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CS_AccountManager.m; sourceTree = "<group>"; };
+		4DE73CDC23B7929F00E3CF62 /* Patcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patcher.h; sourceTree = "<group>"; };
+		4DE73CDD23B7929F00E3CF62 /* Patcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patcher.m; sourceTree = "<group>"; };
+		4DE73CED23B831A100E3CF62 /* CS_MouseTrackingWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CS_MouseTrackingWindow.h; sourceTree = "<group>"; };
+		4DE73CEE23B831A100E3CF62 /* CS_MouseTrackingWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CS_MouseTrackingWindow.m; sourceTree = "<group>"; };
+		4DF9E58423B3EFBA00BC888A /* ChillScreen.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ChillScreen.mailbundle; path = ChillScreen.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -62,6 +74,7 @@
 		4D63E72223B3E31200D0765F /* ChillScreen */ = {
 			isa = PBXGroup;
 			children = (
+				4DE73CE023B7E8F800E3CF62 /* patch */,
 				4D63E72C23B3E62900D0765F /* ChillScreenPlugin.h */,
 				4D63E72E23B3E62900D0765F /* ChillScreenPlugin.m */,
 				4D63E72B23B3E62900D0765F /* JRLPSwizzle.h */,
@@ -69,8 +82,21 @@
 				4D63E72923B3E62900D0765F /* Log.h */,
 				4D63E72D23B3E62900D0765F /* Log.m */,
 				4D63E72323B3E31200D0765F /* Info.plist */,
+				4DE73CDC23B7929F00E3CF62 /* Patcher.h */,
+				4DE73CDD23B7929F00E3CF62 /* Patcher.m */,
 			);
 			path = ChillScreen;
+			sourceTree = "<group>";
+		};
+		4DE73CE023B7E8F800E3CF62 /* patch */ = {
+			isa = PBXGroup;
+			children = (
+				4DE73CD623B738FE00E3CF62 /* CS_AccountManager.h */,
+				4DE73CD723B738FE00E3CF62 /* CS_AccountManager.m */,
+				4DE73CED23B831A100E3CF62 /* CS_MouseTrackingWindow.h */,
+				4DE73CEE23B831A100E3CF62 /* CS_MouseTrackingWindow.m */,
+			);
+			path = patch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D63E73123B3E62900D0765F /* ChillScreenPlugin.m in Sources */,
+				4DE73CDE23B7929F00E3CF62 /* Patcher.m in Sources */,
 				4D63E73023B3E62900D0765F /* Log.m in Sources */,
+				4DE73CEF23B831A100E3CF62 /* CS_MouseTrackingWindow.m in Sources */,
+				4DE73CD823B738FE00E3CF62 /* CS_AccountManager.m in Sources */,
 				4D63E72F23B3E62900D0765F /* JRLPSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DF9E57C23B3EFBA00BC888A /* ChillScreenPlugin.m in Sources */,
+				4DE73CDF23B7929F00E3CF62 /* Patcher.m in Sources */,
 				4DF9E57D23B3EFBA00BC888A /* Log.m in Sources */,
+				4DE73CF023B831A100E3CF62 /* CS_MouseTrackingWindow.m in Sources */,
+				4DE73CD923B738FE00E3CF62 /* CS_AccountManager.m in Sources */,
 				4DF9E57E23B3EFBA00BC888A /* JRLPSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,15 +247,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ChillScreen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
 				PRODUCT_NAME = ChillScreen;
 				SDKROOT = macosx;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				SKIP_INSTALL = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
 			};
 			name = Debug;
 		};
@@ -272,14 +304,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ChillScreen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
 				PRODUCT_NAME = ChillScreen;
 				SDKROOT = macosx;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				SKIP_INSTALL = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChillScreen;
 			};
 			name = Release;
 		};
