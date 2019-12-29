@@ -74,7 +74,7 @@
 		4D63E72223B3E31200D0765F /* ChillScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4DE73CE023B7E8F800E3CF62 /* patch */,
+				4DE73CE023B7E8F800E3CF62 /* Patches */,
 				4D63E72C23B3E62900D0765F /* ChillScreenPlugin.h */,
 				4D63E72E23B3E62900D0765F /* ChillScreenPlugin.m */,
 				4D63E72B23B3E62900D0765F /* JRLPSwizzle.h */,
@@ -88,7 +88,7 @@
 			path = ChillScreen;
 			sourceTree = "<group>";
 		};
-		4DE73CE023B7E8F800E3CF62 /* patch */ = {
+		4DE73CE023B7E8F800E3CF62 /* Patches */ = {
 			isa = PBXGroup;
 			children = (
 				4DE73CD623B738FE00E3CF62 /* CS_AccountManager.h */,
@@ -96,7 +96,7 @@
 				4DE73CED23B831A100E3CF62 /* CS_MouseTrackingWindow.h */,
 				4DE73CEE23B831A100E3CF62 /* CS_MouseTrackingWindow.m */,
 			);
-			path = patch;
+			path = Patches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
