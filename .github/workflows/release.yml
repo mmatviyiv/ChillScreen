@@ -17,7 +17,7 @@ jobs:
         NAME="ChillScreen.mailbundle"
 
         echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-        echo ::set-output name=BUILD_PATH::"${GITHUB_WORKSPACE}/build/Release/"
+        echo ::set-output name=BUILD_PATH::"${GITHUB_WORKSPACE}/build/Release"
         echo ::set-output name=ARTIFACT::"${NAME}.zip"
     - name: Build plugin
       run: |
