@@ -11,9 +11,13 @@
 }
 
 - (id)CS_initWithContentRect:(NSRect)rect styleMask:(NSWindowStyleMask)mask backing:(NSBackingStoreType)back defer:(BOOL)defer {
+    #ifdef DEBUG
+        Log(@"CS_initWithContentRect: %@ %d %d %d", NSStringFromRect(rect), mask, back, defer);
+    #endif
+    
     id window = [self CS_initWithContentRect:rect styleMask:mask backing:back defer:defer];
     
-    NSButton *closeButton = [self standardWindowButton:NSWindowCloseButton];
+    NSButton *closeButton = [window standardWindowButton:NSWindowCloseButton];
     NSView *titleBarView = closeButton.superview;
     NSTextField *title = [titleBarView subviews].lastObject;
     

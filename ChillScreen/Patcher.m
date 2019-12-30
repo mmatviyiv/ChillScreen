@@ -10,7 +10,10 @@
     NSError * __autoreleasing error;
     
     NSString *name = [self original:NSStringFromClass(self)];
-    if(!name) return;
+    if(!name) {
+        Log(@"ignored %@", self);
+        return;
+    }
     
     Class class = NSClassFromString(name);
     [class jrlp_addMethodsFromClass:self error:&error];

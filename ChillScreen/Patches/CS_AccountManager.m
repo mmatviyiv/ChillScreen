@@ -12,12 +12,11 @@
 
 - (void)CS__connectionError:(NSError *)error didChangeForAccount:(id)account {
     #ifdef DEBUG
-        Log(@"%@ %@", error, account);
+        Log(@"CS__connectionError: %@ %@", error, account);
     #endif
 
     if(error) {
         Log(@"skipping %@", error);
-
         return;
     }
 

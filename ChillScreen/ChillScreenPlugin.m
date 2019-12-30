@@ -6,8 +6,12 @@
 
 @implementation ChillScreenPlugin
 
++ (void)load {
+    Log(@"patching components");
+}
+
 + (void)initialize {
-    Log(@"loading started");
+    Log(@"loading plugin");
     
     Class mVMailBundleClass = NSClassFromString(@"MVMailBundle");
     
